@@ -1,0 +1,107 @@
+/* Container (already in index.css, but here if you want local styles) */
+.mobile-container {
+  width: 360px;
+  height: 640px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Form */
+.signup-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title */
+.signup-form h1 {
+  font-size: 1.25rem;  /* text-xl */
+  font-weight: 600;
+  color: #111827;      /* gray-900 */
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Input group */
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.input label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #374151; /* gray-700 */
+  margin-bottom: 0.25rem;
+}
+
+.input label span {
+  color: red;
+  margin-left: 2px;
+}
+
+.input input {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #d1d5db; /* gray-300 */
+  border-radius: 6px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.input input:focus {
+  border-color: #6C25FF; /* purple border on focus */
+}
+
+/* Radio buttons */
+.signup-form p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+  color: #374151;
+  font-weight: 500;
+}
+
+.signup-form div label {
+  margin-right: 1rem;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.signup-form input[type="radio"] {
+  margin-right: 0.25rem;
+}
+
+/* Button */
+.btn-primary {
+  width: 100%;
+  padding: 0.75rem;
+  background: #6C25FF;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #5b1fd1;
+}
+
+/* Responsive - full screen on small devices */
+@media (max-width: 480px) {
+  .mobile-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}

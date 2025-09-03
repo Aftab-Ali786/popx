@@ -1,0 +1,92 @@
+/* Mobile container (same as SignUp) */
+.mobile-container {
+  width: 360px;
+  height: 640px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styling */
+.mobile-container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title */
+.mobile-container h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827; /* gray-900 */
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Subtitle/description */
+.mobile-container p {
+  font-size: 0.9rem;
+  color: #6b7280; /* gray-500 */
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Input group */
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.input label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #374151; /* gray-700 */
+  margin-bottom: 0.25rem;
+}
+
+.input input {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #d1d5db; /* gray-300 */
+  border-radius: 6px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.input input:focus {
+  border-color: #6C25FF; /* purple focus */
+}
+
+/* Button */
+.mobile-container button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #6C25FF;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+.mobile-container button:hover {
+  background: #5b1fd1;
+}
+
+/* Responsive: full screen on small devices */
+@media (max-width: 480px) {
+  .mobile-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
